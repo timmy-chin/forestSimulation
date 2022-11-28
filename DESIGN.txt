@@ -1,0 +1,24 @@
+These methods could have went to either Entity or WorldModel:
++createHouse(): Entity        <<static>>
++createObstacle(): Entity    <<static>>
++createTree(): Entity    <<static>>
++createStump(): Entity   <<static>>
++createSapling(): Entity   <<static>>
++createFairy(): Entity     <<static>>
++createDudeNotFull(): Entity     <<static>>
++createDudeFull(): Entity       <<static>>
+I chose to put them into the Entity class because they are used most in Entity
+and the methods returns an entity.
+
+adjacent() could have went to either Entity or Point
+I chose to put it in Point because it does calculations with points
+
+nearestEntity() could have went to either WorldModel or Point
+I chose to put it i n Point beacuse it does calculations with points
+
+processImageLine()
+getImages()
+setAlpha()
+could have stayed in Functions
+I chose to put them in ImageStore because they are only used in that class
+and they are operating on images
